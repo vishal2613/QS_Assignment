@@ -1,0 +1,78 @@
+.board {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-top: 20px;
+  padding: 10px 40px;
+  justify-content: space-between;
+}
+
+.ticket-column {
+  flex: 1 1 300px; /* Flex-grow, flex-shrink, and the base size of 300px */
+  width: 300px; /* Ensures the column doesn’t grow beyond 300px */
+  box-sizing: border-box; /* Ensures padding and borders are included in width */
+  padding: 10px;
+  position: relative;
+}
+
+.ticket-group {
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 5px;
+  width: 250px;
+}
+
+.ticket-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ticket-card {
+  background: #fff;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.group-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.ticket-group-header {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.ticket-group-header img {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+}
+
+.ticket-group-options {
+  display: flex;
+  gap: 10px;
+}
+
+.ticket-group-options img {
+  width: 20px;
+  height: 20px;
+}
+
+.ticket-count {
+  color: gray;
+}
+
+.controls {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 0 0 2px rgb(221, 220, 220);
+}
